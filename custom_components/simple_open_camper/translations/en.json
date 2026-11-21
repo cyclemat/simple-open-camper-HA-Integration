@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Simple Open Camper",
+        "description": "Address of the panel (LAN IP, Tailscale IP or tailnet name) and the access code from the panel editor (Settings → Network → Home Assistant).",
+        "data": { "host": "Panel address", "token": "Access code" }
+      }
+    },
+    "error": {
+      "cannot_connect": "Panel not reachable – is \"Allow Home Assistant to connect\" switched on?",
+      "invalid_auth": "Access code wrong"
+    },
+    "abort": { "already_configured": "This panel is already set up." }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Take over from the panel",
+        "description": "Which panel values should Home Assistant get? Only these are sent.",
+        "data": { "items": "Panel values" }
+      },
+      "expose": {
+        "title": "Provide to the panel",
+        "description": "Which Home Assistant entities should the panel show? They appear like a satellite \"Home Assistant\" (one group per area).",
+        "data": { "expose": "Entities for the panel" }
+      }
+    },
+    "abort": { "not_connected": "Panel not connected – check address, access code and the switch on the panel." }
+  }
+}

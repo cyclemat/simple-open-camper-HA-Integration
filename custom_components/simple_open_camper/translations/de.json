@@ -1,0 +1,42 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Simple Open Camper",
+        "description": "Adresse des Panels (IP im Netz, Tailscale-IP oder Name im Tailnet) und der Zugangscode aus dem Panel-Editor (Einstellungen → Netzwerk → Home Assistant).",
+        "data": {
+          "host": "Adresse des Panels",
+          "token": "Zugangscode"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Panel nicht erreichbar – ist „Home Assistant darf sich verbinden“ am Panel eingeschaltet?",
+      "invalid_auth": "Zugangscode falsch"
+    },
+    "abort": {
+      "already_configured": "Dieses Panel ist schon eingerichtet."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Vom Panel übernehmen",
+        "description": "Welche Werte des Panels soll Home Assistant bekommen? Nur diese werden übertragen.",
+        "data": {
+          "items": "Werte des Panels"
+        }
+      },
+      "expose": {
+        "title": "Dem Panel bereitstellen",
+        "description": "Welche Home-Assistant-Entitäten soll das Panel zeigen? Sie erscheinen dort wie ein Satellit „Home Assistant“ (eine Gruppe je Bereich).",
+        "data": {
+          "expose": "Entitäten für das Panel"
+        }
+      }
+    },
+    "abort": {
+      "not_connected": "Panel nicht verbunden – Adresse, Zugangscode und den Schalter am Panel prüfen."
+    }
+  }
+}
