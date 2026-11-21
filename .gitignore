@@ -1,2 +1,33 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtuelle Umgebungen
+.venv/
+venv/
+env/
+
+# Editoren und Betriebssystem
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Home-Assistant-Testinstanz und Logs
+config/
+*.log
+home-assistant_v2.db*
+
+# Geheimnisse – nie einchecken
+secrets.yaml
+.env
+*.pem
+*.key
