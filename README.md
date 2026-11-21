@@ -33,7 +33,7 @@ type *Integration* → install → restart Home Assistant.
    - step 1 – tick the panel values HA should take over,
    - step 2 – pick the HA entities the panel should show.
 
-Requires panel firmware **0.2.7** or newer (P4, round panel, Waveshare).
+🧪 **Testing:** currently the panel side is only in the test firmware [`panel-crowpanel-p4-HA-Addon-Test.bin`](https://github.com/cyclemat/simple-open-camper/tree/main/release/test) (P4). It will come with the next regular panel version for the P4, the round panel and the Waveshare.
 
 ---
 
@@ -41,7 +41,7 @@ Requires panel firmware **0.2.7** or newer (P4, round panel, Waveshare).
 
 Verbindet Simple-Open-Camper-Panels mit Home Assistant – in beide Richtungen, jede Seite bekommt nur das Ausgewählte.
 Am Panel im Editor unter **Einstellungen → Netzwerk → Home Assistant** einschalten und den **Zugangscode** kopieren; in HA
-die Integration **Simple Open Camper** hinzufügen (Adresse des Panels + Zugangscode). Unter **Konfigurieren** wählst du,
+die Integration **Simple Open Camper** hinzufügen (Adresse des Panels + Zugangscode). 🧪 Panel-Seite bisher nur in der Testfassung `panel-crowpanel-p4-HA-Addon-Test.bin` (P4). Unter **Konfigurieren** wählst du,
 welche Panel-Werte HA übernimmt und welche HA-Entitäten das Panel zeigt. Lokal per WebSocket, auch über Tailscale.
 
 ## License
